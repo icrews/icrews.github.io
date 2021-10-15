@@ -7,18 +7,35 @@
             h1 {
                font-family: Kano
             }
+            strong {
+                color: #EE6677
+            }
+            .block-title{
+                animation: fadeInDown;
+                animation-duration: 2s;
+            }
+            .block-content{
+                animation: fadeInDown;
+                animation-duration: 2.4s;
+            }
           </style>
     </head>
     <body position="relative">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+        <script>
+             $(function(){
+                 //Empty Script
+             })
         </script>
 
             <div class = "row">
                 <div class="col-2" >
-                    <header class="desktop-header align-items-start flex-column" style = "position:fixed; border-right: solid 1px gray">                       
+                    <header class="desktop-header align-items-start flex-column" style = "position:fixed; border-right: solid 10px #EE6677">                       
                         <nav id = "side-nav" class ="nav navbar-dark bg-dark flex-column " aria-label="navigation bar">
                             <div class = "container m-5">
                                 <img src="Cropped Headshot.png" style="width: 100px" alt= "Zay Crews Headshot">
@@ -26,7 +43,7 @@
                                 <br>
 
                                 <h2 class="mb-3 p-0 text-white" >
-                                    <a class= "text-white h3" style = "text-decoration: none; font-family: Kano;" href="#"><strong>ZAY</strong></a>
+                                    <a class= "text-white h3" style = "text-decoration: none; font-family: Kano;" href="#"><strong style="color: white">ZAY</strong></a>
                                 </h2>
                                     
                                 <ul class = "navbar-nav me-auto" style="min-height:100vh; height:100vh;">
@@ -43,7 +60,7 @@
                                         <a class = "nav-link" href="#Contact">Contact</a>
                                     </li>
                                     <li class = "nav-item">
-                                        <a class = "nav-link disabled" ><small>&lt;ART PORTFOLIO&gt</small></a>
+                                        <a class = "nav-link disabled" ><small>&lt;ART PORTFOLIO&gt<br>COMING SOON...</small></a>
                                     </li>
                                     
                                 </ul>
@@ -58,21 +75,21 @@
                                 <div class = "row" style = "height:100%">
                                     
                                         <div class = "col-6 align-self-center mx-auto">
-                                            <h1 class = "display-1 text-white ">Hello,</h1>
+                                            <h1 class = "display-1 text-white block-title">Hello,</h1>
                                             <br>
-                                            <p class = "lead text-white"> I am Isaiah "Zay" Crews, an undergraduate student in Bloomington, Illinois. I have ample experience in digital illustration and software development.</p>
+                                            <p class = "lead text-white block-content"> I am Isaiah <strong>Zay</strong> Crews, an undergraduate student in Bloomington, Illinois. I have ample experience in <br><strong>digital illustration</strong> and <strong>software development.</strong></p>
                                         </div>
                             </div>
                         </section>
                     </div>
-                    <div class="col flex-fill" style = "border-top: solid 1px gray" id="Skills">
+                    <div class="col flex-fill" style = "border-top: solid 10px #EE6677" id="Skills">
                         <section class="bg-dark mx-auto w-auto flex-column"  style = "min-height: 100vh; height:100vh;">
                                 <div class = "row" style = "height:100%">
                                     
                                         <div class = "col-6 align-self-center mx-auto">
                                             <h1 class = "display-5 text-white ">SKILLS</h1>
                                             <div class="row">
-                                                <div class="col" style = "border-left: solid 1px white;"">
+                                                <div class="col" style = "border-left: solid 1px #EE6677;"">
                                                     <h4 class = "display-8 text-white"> 
                                                         Proficient Languages
                                                         <br>
@@ -91,7 +108,7 @@
                                                     </h4>
                                                     <br>
                                                 </div>   
-                                                <div class="col" style = "border-left: solid 1px white;"">
+                                                <div class="col" style = "border-left: solid 1px #EE6677;"">
                                                     <h4 class = "display-8 text-white"> 
                                                         Proficient Methodologies
                                                         <br>
@@ -111,7 +128,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col flex-fill" style = "border-top: solid 1px gray" id="Experience">
+                    <div class="col flex-fill" style = "border-top: solid 10px #EE6677" id="Experience">
                         <section class="bg-dark mx-auto w-auto flex-column"  style = "min-height: 100vh; height:100vh;">
                                 <div class = "row" style = "height:100%">
                                     
@@ -119,7 +136,7 @@
                                             <h1 class = "display-5 text-white ">EXPERIENCE</h1>
                                             <br>
                                             <div class="row">
-                                                <div class="col" style = "border-left: solid 1px white;"">
+                                                <div class="col" style = "border-left: solid 1px #EE6677;"">
                                                         <h4 class = "display-8 text-white"> 
                                                             Illinois Mathematics & Science Acad.
                                                             <br>
@@ -134,7 +151,7 @@
                                                             <small class="text-muted"> Minor in Music Performance</small>
                                                         </h4>
                                                 </div>
-                                                <div class="col" style = "border-left: solid 1px white;">
+                                                <div class="col" style = "border-left: solid 1px #EE6677;">
                                                        <h4 class = "display-8 text-white"> 
                                                             AutoPair Inc.
                                                             <br>
@@ -152,7 +169,7 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col flex-fill" style = "border-top: solid 1px gray" id="Contact">
+                    <div class="col flex-fill" style = "border-top: solid 10px #EE6677" id="Contact">
                         <section class="bg-dark mx-auto w-auto flex-column"  style = "min-height: 100vh; height:100vh;">
                                 <div class = "row" style = "height:100%">
                                     
@@ -161,20 +178,20 @@
                                             <br>
                                             <div class = "row">
                                                 <div class="col">
-                                                    <i class="bi bi-telephone" style="font-size: 2rem; color: #198754;"></i>
+                                                    <i class="bi bi-telephone" style="font-size: 2rem; color: #EE6677;"></i>
                                                     <h3 class = "display-8 text-white ">Phone</h3>
-                                                    <p class = "text-white">3097066196</p>
+                                                    <p class = "text-white">(309)706-6196</p>
                                                 </div>
                                                 <div class="col">
-                                                    <i class="bi bi-envelope" style="font-size: 2rem; color: #198754;"></i>
+                                                    <i class="bi bi-envelope" style="font-size: 2rem; color: #EE6677;"></i>
                                                     <h3 class = "display-8 text-white ">Email:</h3>
                                                     <p  class = "text-white">icrews@iwu.edu</p>
                                                 </div>
                                                 
                                                 <div class="col">
-                                                    <i class="bi bi-linkedin" style="font-size: 2rem; color: #198754;"></i>
+                                                    <i class="bi bi-linkedin" style="font-size: 2rem; color: #EE6677;"></i>
                                                     <h3 class = "display-8 text-white ">LinkedIn</h3>
-                                                    <p class = "text-white"> <a style= "text-decoration: none" href="https://www.linkedin.com/in/isaiahcrews">linkedin.com/in/isaiahcrews</a></p>
+                                                    <p> <a class = "text-white "style= "text-decoration: none" href="https://www.linkedin.com/in/isaiahcrews">linkedin.com/in/isaiahcrews</a></p>
                                                 </div>
                                             </div>
                                             
